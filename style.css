@@ -24,15 +24,40 @@ black : 2A363B
 
 /* header */
 
+.overlay {
+    background-color: #2A363B;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: 2;
+}
+
+.background {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+
+    background: no-repeat center right fixed url("assets/images/code-background-3.jpg");
+    background-size: cover;
+}
+
 header {
     text-align: center;
-    background: #99B898;
-    color: #2A363B;
+    color: #ffffff;
 }
 
 header .container {
+    position: relative;
     padding-top: 200px;
     padding-bottom: 100px;
+    z-index: 4;
 }
 
 /* section */
@@ -41,7 +66,7 @@ section {
     padding: 200px 0;
 }
 
-section#contact, section#skills {
+section#portfolio, section#experience {
     background-color: #99B898;
     color: #2A363B;
 }
@@ -121,6 +146,10 @@ ul.no-bullets {
     color: #E84A5F;
 }
 
+#skills ul > li:hover {
+    background: #F2F2F2;
+}
+
 #skills ul > li .ability-title {
     display: inline-block;
     width: 60%;
@@ -130,10 +159,142 @@ ul.no-bullets {
     float: right;
 }
 
+.skill-wheel {
+    position: relative;
+}
+
+.skill-wheel h4 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 51;
+}
+
+.skill-wheel p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 51;
+}
+
+/* portfolio */
+.btn {
+    color: #2A363B;
+    border-radius: 0px;
+    height: 37.5px;
+    width: 100%;
+    text-align: left;
+}
+
+.btn-0 {
+    background: #99B898;
+}
+.btn-1 {
+    background: #FECEA8;
+}
+
+.btn-2 {
+    background: #FF847C;
+}
+.btn-3 {
+    background: #E84A5F;
+}
+.btn-4 {
+    color: #E84A5F;
+    background: #2A363B;
+}
+.btn-4:hover {
+    color: #E84A5F;
+}
+.btn-4:focus {
+    color: #E84A5F;
+}
+.clicked {
+    /*background: #ffffff;*/
+    opacity: 0.2;
+}
+
+
+
+.img-cont {
+    padding: 2px;
+    height: 150px;
+    overflow: hidden
+}
+
+.img-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-cont img:hover {
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+
+    -webkit-filter: blur(2px);
+
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+
+
+.cat-w:before {
+    content: '';
+    position: absolute;
+    top: 2px; right: 2px;
+    border-top: 146px solid #FECEA8;
+    border-left: 10px solid #FECEA8;
+}
+.cat-c:before {
+    content: '';
+    position: absolute;
+    top: 2px; right: 2px;
+    border-top: 146px solid #FF847C;
+    border-left: 10px solid #FF847C;
+}
+.cat-i:before {
+    content: '';
+    position: absolute;
+    top: 2px; right: 2px;
+    border-top: 146px solid #E84A5F;
+    border-left: 10px solid #E84A5F;
+}
+.cat-e:before {
+    content: '';
+    position: absolute;
+    top: 2px; right: 2px;
+    border-top: 146px solid #2A363B;
+    border-left: 10px solid #2A363B;
+}
+
+
+
 /* general */
 
 h1, h2, h3 {
     text-align: center;
+}
+
+#profile h3,
+#experience h3{
+    text-align: inherit;
 }
 
 body {
@@ -141,9 +302,16 @@ body {
 }
 
 hr {
+    /*max-width: 250px;*/
+}
+
+header hr {
     max-width: 250px;
 }
 
 section .container {
+    max-width: 1280px; padding: 40px 180px;
+}
+footer .container {
     max-width: 1280px; padding: 40px 180px;
 }
