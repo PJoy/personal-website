@@ -28,3 +28,14 @@ function showHideProjects (button, type){
     $(button).toggleClass('clicked');
     $('.'+type).fadeToggle();
 }
+
+$('#portfolio p').click(function(){
+    $('.btn-2').click();
+    $('.btn-3').click();
+    $('.btn-4').click();
+    $('.btn-5').click();
+});
+
+function generatePortfolio(n) {
+
+}

@@ -221,6 +221,10 @@ ul.no-bullets {
 .btn-4:focus {
     color: #E84A5F;
 }
+.btn-5 {
+    background: #ffffff;
+}
+
 .clicked {
     /*background: #ffffff;*/
     opacity: 0.2;
@@ -229,8 +233,8 @@ ul.no-bullets {
 
 
 .img-cont {
-    padding: 2px;
-    height: 150px;
+    padding: 10px;
+    height: 200px;
     overflow: hidden
 }
 
@@ -241,9 +245,9 @@ ul.no-bullets {
 }
 
 .img-cont img:hover {
-    -moz-transform: scale(1.4);
-    -webkit-transform: scale(1.4);
-    transform: scale(1.4);
+    /*-moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);*/
 
     -webkit-filter: blur(2px);
 
@@ -254,7 +258,7 @@ ul.no-bullets {
 }
 
 
-
+/*
 .cat-w:before {
     content: '';
     position: absolute;
@@ -283,6 +287,13 @@ ul.no-bullets {
     border-top: 146px solid #2A363B;
     border-left: 10px solid #2A363B;
 }
+.cat-s:before {
+    content: '';
+    position: absolute;
+    top: 2px; right: 2px;
+    border-top: 146px solid #ffffff;
+    border-left: 10px solid #ffffff;
+}*/
 
 
 
