@@ -4,15 +4,28 @@
 
 $(document).ready(function(){
     applyHeader();
-    colorSkills('#svg1', 8, '#E84A5F', '#2A363B');
-    colorSkills('#svg2', 8, '#E84A5F', '#2A363B');
-    colorSkills('#svg3', 3, '#E84A5F', '#2A363B');
-
+    colorTheSkills();
+    var index = 0;
+    $('.slideshow').hide();
+    $('.slideshow:first').toggle();
+    window.setInterval(function(){
+        $('.slideshow:nth-of-type('+(index%5+1)+')').toggle();
+        $('.slideshow:nth-of-type('+((index+1)%5+1)+')').toggle();
+        index = (index+1)%5;
+    }, 3000);
 });
+
+
 
 function applyHeader()
 {
     $('header').css({ height: ($(window).height()) +'px' });
+}
+
+function colorTheSkills(){
+    colorSkills('#svg1', 8, '#E84A5F', '#2A363B');
+    colorSkills('#svg2', 8, '#E84A5F', '#2A363B');
+    colorSkills('#svg3', 3, '#E84A5F', '#2A363B');
 }
 
 function colorSkills(elemt, grade, col1, col2) {
@@ -36,6 +49,3 @@ $('#portfolio p').click(function(){
     $('.btn-5').click();
 });
 
-function generatePortfolio(n) {
-
-}
