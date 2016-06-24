@@ -66,7 +66,7 @@ section {
     padding: 200px 0;
 }
 
-section#portfolio, section#experience {
+section#portfolio, section#experiences {
     background-color: #99B898;
     color: #2A363B;
 }
@@ -79,7 +79,6 @@ footer {
 }
 
 footer a {
-    background-color: #2A363B;
     color: #E84A5F;
 }
 
@@ -302,6 +301,10 @@ ul.no-bullets {
     overflow: hidden;
 }
 
+#profile .col-lg-12 .row {
+    background: #ffffff;
+}
+
 canvas {
     position: absolute;
     top: calc(50% - 600px);
@@ -313,6 +316,43 @@ canvas {
     -webkit-transform: rotate(45deg);
 }
 
+/** experience **/
+
+#experiences .experience {
+    margin-bottom: 20px;
+}
+
+#experiences .experience p > strong {
+    display: block;
+    padding-top: 8px;
+    margin-bottom: 10px;
+}
+
+#experiences .experience .experience-details {
+    display: block;
+    margin-top: 6px;
+}
+
+#experiences .experience .experience-details * {
+    color: #E84A5F;
+}
+
+#experiences .experience .experience-details .seperator {
+    color: #2A363B;
+}
+
+svg:not(:root) {
+    overflow: visible;
+}
+
+.metro circle {
+    fill: #FF847C;
+}
+
+.metro path {
+    fill: #FECEA8;
+}
+
 /* general */
 
 h1, h2, h3 {
@@ -320,7 +360,7 @@ h1, h2, h3 {
 }
 
 #profile h3,
-#experience h3{
+#experiences h3{
     text-align: inherit;
 }
 
