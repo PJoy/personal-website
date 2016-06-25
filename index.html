@@ -43,20 +43,50 @@
     <div class="container">
         <div class="navbar-header page-scroll">
 
-            <a class="navbar-brand" href="#page-top">Pierre PORTEJOIE, freelance developer</a>
+            <a class="navbar-brand" href="#page-top">Pierre PORTEJOIE</a>
 
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#portfolio">Portfolio</a>
+                <li><a href="#profile">Profile</a>
                 </li>
-                <li>
-                    <a href="#about">About</a>
+                <li><a href="#experiences">Experience</a>
+
+                    <nav class="navbar sticky-navbar">
+                        <ul class="nav">
+                            <li >
+                                <div class="exp-main" onclick="showHideExperiences(this, 'exp-main')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve" class="metro"data-toggle="tooltip" data-placement="left" title="Main Experiences" data-container="body">
+                                        <path d="M25,0C11.193,0,0,11.193,0,25c0,13.807,11.193,25,25,25c13.807,0,25-11.193,25-25C50,11.193,38.807,0,25,0z M25,43.75   C14.645,43.75,6.25,35.355,6.25,25S14.645,6.25,25,6.25S43.75,14.645,43.75,25S35.355,43.75,25,43.75z"/>
+                                        <circle cx="25" cy="25" r="6.25"/>
+                                        yo
+                                    </svg>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="exp-second" onclick="showHideExperiences(this, 'exp-second')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve" class="metro" data-toggle="tooltip" data-placement="left" title="Secondary Experiences" data-container="body">
+                                        <path d="M25,0C11.193,0,0,11.193,0,25c0,13.807,11.193,25,25,25c13.807,0,25-11.193,25-25C50,11.193,38.807,0,25,0z M25,43.75   C14.645,43.75,6.25,35.355,6.25,25S14.645,6.25,25,6.25S43.75,14.645,43.75,25S35.355,43.75,25,43.75z"/>
+                                        <circle cx="25" cy="25" r="6.25"/>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="exp-third" onclick="showHideExperiences(this, 'exp-third')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve" class="metro" data-toggle="tooltip" data-placement="left" title="Interships & Associations" data-container="body">
+                                        <path d="M25,0C11.193,0,0,11.193,0,25c0,13.807,11.193,25,25,25c13.807,0,25-11.193,25-25C50,11.193,38.807,0,25,0z M25,43.75   C14.645,43.75,6.25,35.355,6.25,25S14.645,6.25,25,6.25S43.75,14.645,43.75,25S35.355,43.75,25,43.75z"/>
+                                        <circle cx="25" cy="25" r="6.25"/>
+                                    </svg>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+
                 </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -81,22 +111,19 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Profile</h2>
-                <p class="text-center">yeah, yeah, yo, yo</p>
+                <h2>profile</h2>
                 <hr>
                 <div class="row">
-                    <div class="col-lg-4 text-right">
+                    <div class="col-lg-4 text-right vertical-align">
                         <h3>About Me</h3>
                         <p>
-                            Diplômé de l'école d'ingénieurs INSA de Lyon, je suis actuellement auto-entrepreneur, à l'écoute de missions freelance en télétravail ou chez le client.
-                            Mes compétences sont le développement logiciel, web ou d'applications, l'administration système et les réseaux.
-                            J'aime la transparence et la communication dans un projet. Je suis flexible et m'adapte aux besoins du client.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros lacus, mattis eget vehicula placerat, lacinia id purus. Nunc vehicula ac dolor id interdum. Nulla facilisi. Pellentesque non bibendum tortor, hendrerit tincidunt libero. Donec euismod scelerisque felis eu tempus. Donec eu arcu vel velit dapibus cursus ut mollis elit.
                         </p>
                     </div>
-                    <div class="col-lg-4 text-center">
+                    <div class="col-lg-4 text-center vertical-align">
                         <img src="assets/images/photo-o.png" alt="Pierre PORTEJOIE, freelance sur Lyon" class="img-circle img-responsive">
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 vertical-align">
                         <h3>Details</h3>
                         <p>
                             <strong>Name:</strong><br>
@@ -108,24 +135,32 @@
                         </p>
                     </div>
                 </div>
+                <hr>
+                <h2>.</h2>
             </div>
         </div>
     </div>
 </section>
 <section id="experiences">
+
     <div class="container">
+
         <div class="row">
             <div class="col-lg-12">
                 <h2>Experience</h2>
                 <hr>
                 <div style="overflow: hidden">
-                    <div class="experience row ">
+
+                    <div class="experience row exp-main">
                         <div class="col-md-1" style="height: 200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
+                                <rect x="21.875" width="6.25" height="800"/>
+                            </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
-                            <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
-                            <circle cx="25.205" cy="400.337" r="6.25"/>
-                            yo
-                        </svg>
+                                <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
+                                <circle cx="25.205" cy="400.337" r="6.25"/>
+                                yo
+                            </svg>
                         </div>
                         <div class="col-md-3">
                             <h4>Freelance</h4>
@@ -152,8 +187,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="experience row ">
+                    <div class="experience row exp-second">
                         <div class="col-md-1" style="height: 200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
+                                <rect x="21.875" width="6.25" height="800"/>
+                            </svg>
+
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_2" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
                             <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
                             <circle cx="25.205" cy="400.337" r="6.25"/>
@@ -184,8 +223,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="experience row ">
+                    <div class="experience row exp-main">
                         <div class="col-md-1" style="height: 200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
+                                <rect x="21.875" width="6.25" height="800"/>
+                            </svg>
+
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_2" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
                             <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
                             <circle cx="25.205" cy="400.337" r="6.25"/>
@@ -216,8 +259,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="experience row ">
+                    <div class="experience row exp-second">
                         <div class="col-md-1" style="height: 200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
+                                <rect x="21.875" width="6.25" height="800"/>
+                            </svg>
+
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_2" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
                             <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
                             <circle cx="25.205" cy="400.337" r="6.25"/>
@@ -248,40 +295,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="experience row ">
+                    <div class="experience row exp-third">
                         <div class="col-md-1" style="height: 200px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_2" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
-                            <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
-                            <circle cx="25.205" cy="400.337" r="6.25"/>
-                        </svg>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>Festival Nuits de Rêve</h4>
-                            <p class="experience-period">2010 (2 months) - 2011 (2 months)</p>
-                        </div>
-                        <div class="col-md-8">
-                            <p>
-                                <strong>Light Technician for Art Performances</strong>
-                            <span class="hidden-phone">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros lacus, mattis eget vehicula placerat, lacinia id purus. Nunc vehicula ac dolor id interdum. Nulla facilisi. Pellentesque non bibendum tortor, hendrerit tincidunt libero. Donec euismod scelerisque felis eu tempus. Donec eu arcu vel velit dapibus cursus ut mollis elit.
-                            </span>
-                                <br>
-                            <span class="experience-details">
-                                <span class="location">
-                                    <span class="glyphicon glyphicon-map-marker"></span>
-                                     Blanlhac
-                                </span>
-                                <span class="seperator">|</span>
-                                <span class="link">
-                                    <span class="glyphicon glyphicon-link"></span>
-                                    <a href="http://www.erasme.org/" target="_blank">www.erasme.org</a>
-                                </span>
-                            </span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="experience row ">
-                        <div class="col-md-1" style="height: 200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
+                                <rect x="21.875" width="6.25" height="800"/>
+                            </svg>
+
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_2" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
                             <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
                             <circle cx="25.205" cy="400.337" r="6.25"/>
@@ -312,8 +331,120 @@
                             </p>
                         </div>
                     </div>
-                    <div class="experience row ">
+                    <div class="experience row exp-third">
                         <div class="col-md-1" style="height: 200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
+                                <rect x="21.875" width="6.25" height="800"/>
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_2" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
+                            <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
+                            <circle cx="25.205" cy="400.337" r="6.25"/>
+                        </svg>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Rêve de Foin</h4>
+                            <p class="experience-period">2010 & 2011</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong>Light Engineer</strong>
+                            <span class="hidden-phone">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros lacus, mattis eget vehicula placerat, lacinia id purus. Nunc vehicula ac dolor id interdum. Nulla facilisi. Pellentesque non bibendum tortor, hendrerit tincidunt libero. Donec euismod scelerisque felis eu tempus. Donec eu arcu vel velit dapibus cursus ut mollis elit.
+                            </span>
+                                <br>
+                            <span class="experience-details">
+                                <span class="location">
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                     Festival Nuits de Rêve, Blanlhac
+                                </span>
+                                <span class="seperator">|</span>
+                                <span class="link">
+                                    <span class="glyphicon glyphicon-link"></span>
+                                    <a href="http://revedefoin.com/" target="_blank">revedefoin.com</a>
+                                </span>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience row exp-third">
+                        <div class="col-md-1" style="height: 200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
+                                <rect x="21.875" width="6.25" height="800"/>
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_2" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
+                            <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
+                            <circle cx="25.205" cy="400.337" r="6.25"/>
+                        </svg>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>CGR - La Rotonde</h4>
+                            <p class="experience-period">2009 - 2012</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong>General Secretary - Light & Sound Engineer </strong>
+                            <span class="hidden-phone">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros lacus, mattis eget vehicula placerat, lacinia id purus. Nunc vehicula ac dolor id interdum. Nulla facilisi. Pellentesque non bibendum tortor, hendrerit tincidunt libero. Donec euismod scelerisque felis eu tempus. Donec eu arcu vel velit dapibus cursus ut mollis elit.
+                            </span>
+                                <br>
+                            <span class="experience-details">
+                                <span class="location">
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                    Villeurbanne
+                                </span>
+                                <span class="seperator">|</span>
+                                <span class="link">
+                                    <span class="glyphicon glyphicon-link"></span>
+                                    <a href="http://rotonde.asso.insa-lyon.fr/" target="_blank">rotonde.asso.insa-lyon.fr</a>
+                                </span>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience row exp-third">
+                        <div class="col-md-1" style="height: 200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
+                                <rect x="21.875" width="6.25" height="800"/>
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_2" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
+                            <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
+                            <circle cx="25.205" cy="400.337" r="6.25"/>
+                        </svg>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>SNCF</h4>
+                            <p class="experience-period">2009</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong>Manual Work</strong>
+                            <span class="hidden-phone">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros lacus, mattis eget vehicula placerat, lacinia id purus. Nunc vehicula ac dolor id interdum. Nulla facilisi. Pellentesque non bibendum tortor, hendrerit tincidunt libero. Donec euismod scelerisque felis eu tempus. Donec eu arcu vel velit dapibus cursus ut mollis elit.
+                            </span>
+                                <br>
+                            <span class="experience-details">
+                                <span class="location">
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                    Nevers
+                                </span>
+                                <span class="seperator">|</span>
+                                <span class="link">
+                                    <span class="glyphicon glyphicon-link"></span>
+                                    <a href="http://www.sncf.com/" target="_blank">www.sncf.com</a>
+                                </span>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience row exp-main">
+                        <div class="col-md-1" style="height: 200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
+                                <rect x="21.875" width="6.25" height="800"/>
+                            </svg>
+
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_2" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
                             <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
                             <circle cx="25.205" cy="400.337" r="6.25"/>
@@ -344,8 +475,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="experience row ">
+                    <div class="experience row exp-main">
                         <div class="col-md-1" style="height: 200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
+                                <rect x="21.875" width="6.25" height="800"/>
+                            </svg>
+
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_2" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
                             <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
                             <circle cx="25.205" cy="400.337" r="6.25"/>
@@ -371,8 +506,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="experience row ">
+                    <div class="experience row exp-main">
                         <div class="col-md-1" style="height: 200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
+                                <rect x="21.875" width="6.25" height="800"/>
+                            </svg>
+
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="metro_2" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="metro">
                             <path d="M28.125,375.201V0h-6.25v375.201C9.544,376.74,0,387.252,0,400s9.544,23.26,21.875,24.799V800h6.25V424.799     C40.456,423.26,50,412.748,50,400S40.456,376.74,28.125,375.201z M25,418.75c-10.355,0-18.75-8.395-18.75-18.75     s8.395-18.75,18.75-18.75s18.75,8.395,18.75,18.75S35.355,418.75,25,418.75z"/>
                             <circle cx="25.205" cy="400.337" r="6.25"/>
@@ -781,7 +920,6 @@
             </div>
         </div>
 </section>
-
 <section id="contact">
     <div class="container">
         <div class="row">
@@ -789,25 +927,19 @@
 
                 <h2>Contact</h2>
                 <hr>
+                You can send me a message using the form below or scroll down a little if you want my direct info.
                 <form name="sentMessage" id="contactForm" novalidate="">
                     <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls floating-label-form-group-with-value">
+                        <div class="form-group col-xs-12 floating-label-form-group controls ">
                             <label>Name</label>
                             <input type="text" class="form-control" placeholder="Name" id="name" required="" data-validation-required-message="Please enter your name." aria-invalid="false">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group warning">
-                        <div class="form-group col-xs-12 floating-label-form-group controls floating-label-form-group-with-value">
+                        <div class="form-group col-xs-12 floating-label-form-group controls ">
                             <label>Email Address</label>
                             <input type="email" class="form-control" placeholder="Email Address" id="email" required="" data-validation-required-message="Please enter your email address." aria-invalid="true">
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls floating-label-form-group-with-value">
-                            <label>Phone Number</label>
-                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required="" data-validation-required-message="Please enter your phone number." aria-invalid="false">
-                            <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
@@ -821,10 +953,21 @@
                     <div id="success"></div>
                     <div class="row">
                         <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-0">Send</button>
+                            <button type="submit" class="btn btn-sendform">Send</button>
                         </div>
                     </div>
                 </form>
+
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2 text-center">
+                        <i class="fa fa-phone fa-3x sr-contact" data-sr-id="9" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
+                        <p>+33 (0)6.86.03.61.43</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <i class="fa fa-envelope-o fa-3x sr-contact" data-sr-id="10" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
+                        <p><a href="mailto:portejoiepierre@gmail.com">portejoiepierre@gmail.com</a></p>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -846,16 +989,13 @@
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
                             <li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -881,8 +1021,11 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/scripts/functions.js"></script>
 <script type="text/javascript" src="assets/scripts/ruby/ruby.js"></script>
+<script type="text/javascript" src="assets/scripts/contact_me.js"></script>
 </body>
 </html>

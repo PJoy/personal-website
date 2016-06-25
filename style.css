@@ -13,6 +13,9 @@ black : 2A363B
     color: #ffffff;
     border-color: transparent;
 }
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+}
 
 .navbar-default .navbar-nav>li>a{
     color: #ffffff;
@@ -20,6 +23,35 @@ black : 2A363B
 
 .navbar-default .navbar-brand {
     color: #ffffff;
+}
+
+.sticky-navbar {
+    display: none;
+    position: fixed;
+    top: 200px;
+    right: 200px;
+    z-index: 2;
+    list-style: none;
+}
+
+.active .sticky-navbar {
+    display: block;
+}
+
+.sticky-navbar svg {
+    cursor: pointer;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #E84A5F;
+}
+
+.tooltip-inner {
+    background: #2A363B;
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #2A363B;
 }
 
 /* header */
@@ -63,7 +95,7 @@ header .container {
 /* section */
 
 section {
-    padding: 200px 0;
+    padding: 0 0;
 }
 
 section#portfolio, section#experiences {
@@ -224,6 +256,17 @@ ul.no-bullets {
     background: #ffffff;
 }
 
+.btn-sendform {
+    background: #99B898;
+}
+
+.btn-sendform:hover {
+    color: #E84A5F;
+    background: #2A363B;
+}
+
+
+
 .clicked {
     /*background: #ffffff;*/
     opacity: 0.2;
@@ -294,6 +337,17 @@ ul.no-bullets {
     border-left: 10px solid #ffffff;
 }*/
 
+/** profile **/
+
+/*http://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap*/
+.vertical-aligne {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+}
+
 /** ruby **/
 
 #profile {
@@ -345,18 +399,125 @@ svg:not(:root) {
     overflow: visible;
 }
 
-.metro circle {
+.exp-main .metro circle {
+    fill: #E84A5F;
+}
+
+.exp-second .metro circle {
     fill: #FF847C;
+}
+
+.exp-third .metro circle {
+    fill: #2A363B;
 }
 
 .metro path {
     fill: #FECEA8;
 }
 
+.line {
+    fill: #FECEA8;
+    display: none;
+}
+
+/** contact form **/
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eeeeee;
+}
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group input, .floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: none;
+    box-shadow: none !important;
+    resize: none;
+}
+
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top 0.3s ease,opacity 0.3s ease;
+    -moz-transition: top 0.3s ease,opacity 0.3s ease;
+    -ms-transition: top 0.3s ease,opacity 0.3s ease;
+    transition: top 0.3s ease,opacity 0.3s ease;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #99B898;
+}
+
+/** titles **/
+
+#profile h2,
+#skills h2,
+#contact h2 {
+    color: #99B898;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+#experiences h2,
+#portfolio h2 {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+#profile h3,
+#skills h3,
+#contact h3 {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+#experiences h3,
+#portfolio h3 {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
 /* general */
+
+a {
+    color: #E84A5F;
+}
+
+a:hover {
+    color: #E84A5F;
+}
+
+h2 {
+    font-size: 54px;
+}
 
 h1, h2, h3 {
     text-align: center;
+    font-weight: 100;
 }
 
 #profile h3,
@@ -366,6 +527,7 @@ h1, h2, h3 {
 
 body {
     color: #2A363B;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 hr {

@@ -49,3 +49,34 @@ $('#portfolio p').click(function(){
     $('.btn-5').click();
 });
 
+function showHideExperiences (button, type){
+    $(button).toggleClass('clicked');
+    if ($('.experience.'+type+' .line').css("display") == 'none'){
+        $('.experience.'+type+' .line').toggle(0);
+        $('.experience.'+type+' .metro').toggle(0);
+        $('.experience.'+type).slideToggle();
+    } else {
+        $('.experience.'+type).slideToggle();
+        $('.experience.'+type+' .line').delay(400).toggle(0);
+        $('.experience.'+type+' .metro').delay(400).toggle(0);
+    }
+}
+
+$(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+});
