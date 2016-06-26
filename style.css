@@ -257,10 +257,13 @@ ul.no-bullets {
 }
 
 .btn-sendform {
+    width: 100px;
     background: #99B898;
+    text-align: center;
 }
 
 .btn-sendform:hover {
+    width: 100px;
     color: #E84A5F;
     background: #2A363B;
 }
@@ -339,13 +342,11 @@ ul.no-bullets {
 
 /** profile **/
 
+/*vert align : */
 /*http://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap*/
-.vertical-aligne {
-    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */
 
-    display: flex;
-    align-items: center;
+#profile .col-lg-4 {
+    height: 250px;
 }
 
 /** ruby **/
@@ -363,11 +364,11 @@ canvas {
     position: absolute;
     top: calc(50% - 600px);
     left: calc(50% - 600px);
-    -webkit-filter: blur(2px);
+/*    -webkit-filter: blur(2px);
     -ms-filter: blur(2px);
     -o-filter: blur(2px);
-    filter: blur(2px);
-    -webkit-transform: rotate(45deg);
+    filter: blur(2px);*/
+    -webkit-transform: rotate(45deg) scale(0.75, 0.75);
 }
 
 /** experience **/
@@ -481,7 +482,7 @@ form .row:first-child .floating-label-form-group {
 #profile h2,
 #skills h2,
 #contact h2 {
-    color: #99B898;
+    color: #E84A5F;
     font-family: 'Open Sans', sans-serif !important;
 }
 
@@ -503,11 +504,16 @@ form .row:first-child .floating-label-form-group {
 
 /* general */
 
+#profile h3,
+#skills h3{
+    color: #E84A5F;
+}
+
 a {
     color: #E84A5F;
 }
 
-a:hover {
+a:hover, a:focus {
     color: #E84A5F;
 }
 
@@ -518,6 +524,10 @@ h2 {
 h1, h2, h3 {
     text-align: center;
     font-weight: 100;
+}
+
+h2 {
+    margin-bottom: 40px;
 }
 
 #profile h3,
@@ -541,8 +551,9 @@ header hr {
 section .container {
     max-width: 1280px; padding: 40px 180px;
 }
+
 footer .container {
-    max-width: 1280px; padding: 40px 180px;
+    max-width: 1280px; padding: 0px 180px;
 }
 
 @media (max-width: 767px){

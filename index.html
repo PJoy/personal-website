@@ -106,24 +106,25 @@
     <div class="overlay"></div>
 </header>
 <section id="profile">
+
     <canvas id="c"></canvas>
 
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>profile</h2>
+                <h2>Profile</h2>
                 <hr>
                 <div class="row">
-                    <div class="col-lg-4 text-right vertical-align">
+                    <div class="col-lg-4 text-right vertical-align" data-sr="enter right, move 100px">
                         <h3>About Me</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros lacus, mattis eget vehicula placerat, lacinia id purus. Nunc vehicula ac dolor id interdum. Nulla facilisi. Pellentesque non bibendum tortor, hendrerit tincidunt libero. Donec euismod scelerisque felis eu tempus. Donec eu arcu vel velit dapibus cursus ut mollis elit.
                         </p>
                     </div>
-                    <div class="col-lg-4 text-center vertical-align">
+                    <div class="col-lg-4 text-center vertical-align" data-sr="move 0px, scale up 50%">
                         <img src="assets/images/photo-o.png" alt="Pierre PORTEJOIE, freelance sur Lyon" class="img-circle img-responsive">
                     </div>
-                    <div class="col-lg-4 vertical-align">
+                    <div class="col-lg-4 vertical-align" data-sr="enter left, move 100px" style="z-index: 9">
                         <h3>Details</h3>
                         <p>
                             <strong>Name:</strong><br>
@@ -136,7 +137,7 @@
                     </div>
                 </div>
                 <hr>
-                <h2>.</h2>
+                <h2 style="color: transparent">.</h2>
             </div>
         </div>
     </div>
@@ -525,6 +526,9 @@
                         </div>
                     </div>
                 </div>
+                <hr>
+                <h2 style="color: transparent">.</h2>
+
             </div>
         </div>
     </div>
@@ -808,20 +812,21 @@
                     </div>
                 </div>
                 <h3>Languages</h3>
+                <hr style="border-top: 0; margin: 20px">
                 <div class="row text-center skill-wheel">
                     <div class="col-md-4 ">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg1" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
                             <path d="M82.801,70.044c29.146-26.302,67.182-42.935,109.059-44.853V0.178C143.129,2.13,98.885,21.506,65.197,52.261     L82.801,70.044z"/><path d="M25.194,191.859c1.947-42.503,19.054-81.047,46.042-110.359L53.635,63.722C22.088,97.588,2.159,142.411,0.178,191.859     H25.194z"/><path d="M208.14,0.178v25.013c42.503,1.947,81.047,19.055,110.359,46.044l17.778-17.601     C302.411,22.087,257.588,2.159,208.14,0.178z"/><path d="M70.046,317.197c-26.303-29.145-42.935-67.181-44.853-109.058H0.178c1.952,48.732,21.328,92.977,52.084,126.665     L70.046,317.197z"/><path d="M374.804,208.14c-1.946,42.503-19.054,81.046-46.041,110.356l17.603,17.781c31.547-33.866,51.475-78.688,53.455-128.137     H374.804z"/><path d="M191.86,374.8c-42.503-1.946-81.047-19.052-110.358-46.037l-17.78,17.602c33.867,31.547,78.689,51.476,128.138,53.456     V374.8z"/><path d="M329.954,82.801c26.302,29.147,42.934,67.183,44.851,109.059h25.017c-1.951-48.732-21.327-92.977-52.083-126.665     L329.954,82.801z"/><path d="M317.196,329.953c-29.146,26.3-67.181,42.931-109.056,44.848v25.021c48.731-1.951,92.976-21.327,126.664-52.083     L317.196,329.953z"/>
                         </svg>
                         <h4>French</h4>
-                        <p>Mother language</p>
+                        <p>Mother tongue</p>
                     </div>
                     <div class="col-md-4 ">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg2" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
                             <path d="M82.801,70.044c29.146-26.302,67.182-42.935,109.059-44.853V0.178C143.129,2.13,98.885,21.506,65.197,52.261     L82.801,70.044z"/><path d="M25.194,191.859c1.947-42.503,19.054-81.047,46.042-110.359L53.635,63.722C22.088,97.588,2.159,142.411,0.178,191.859     H25.194z"/><path d="M208.14,0.178v25.013c42.503,1.947,81.047,19.055,110.359,46.044l17.778-17.601     C302.411,22.087,257.588,2.159,208.14,0.178z"/><path d="M70.046,317.197c-26.303-29.145-42.935-67.181-44.853-109.058H0.178c1.952,48.732,21.328,92.977,52.084,126.665     L70.046,317.197z"/><path d="M374.804,208.14c-1.946,42.503-19.054,81.046-46.041,110.356l17.603,17.781c31.547-33.866,51.475-78.688,53.455-128.137     H374.804z"/><path d="M191.86,374.8c-42.503-1.946-81.047-19.052-110.358-46.037l-17.78,17.602c33.867,31.547,78.689,51.476,128.138,53.456     V374.8z"/><path d="M329.954,82.801c26.302,29.147,42.934,67.183,44.851,109.059h25.017c-1.951-48.732-21.327-92.977-52.083-126.665     L329.954,82.801z"/><path d="M317.196,329.953c-29.146,26.3-67.181,42.931-109.056,44.848v25.021c48.731-1.951,92.976-21.327,126.664-52.083     L317.196,329.953z"/>
                         </svg>
                         <h4>English</h4>
-                        <p>Bilingual</p>
+                        <p>Fluent</p>
                     </div>
                     <div class="col-md-4 ">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg3" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
@@ -831,6 +836,8 @@
                         <p>Conversational</p>
                     </div>
                 </div>
+                <hr>
+                <h2 style="color: transparent">.</h2>
             </div>
         </div>
     </div>
@@ -917,6 +924,8 @@
                         <img class="slideshow" src="assets/images/portfolio/graph/NL9.png">
                     </div>
                 </div>
+                <hr>
+                <h2 style="color: transparent">.</h2>
             </div>
         </div>
 </section>
@@ -927,7 +936,8 @@
 
                 <h2>Contact</h2>
                 <hr>
-                You can send me a message using the form below or scroll down a little if you want my direct info.
+                You can send me a message using the form below or scroll down a little if you want <a href="#contactinfo">my direct info</a>.
+                <hr>
                 <form name="sentMessage" id="contactForm" novalidate="">
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls ">
@@ -952,21 +962,27 @@
                     <br>
                     <div id="success"></div>
                     <div class="row">
-                        <div class="form-group col-xs-12">
+                        <div class="form-group col-xs-12 text-center">
                             <button type="submit" class="btn btn-sendform">Send</button>
                         </div>
                     </div>
                 </form>
-
-                <div class="row">
-                    <div class="col-lg-4 col-lg-offset-2 text-center">
-                        <i class="fa fa-phone fa-3x sr-contact" data-sr-id="9" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-                        <p>+33 (0)6.86.03.61.43</p>
+                <div id="contactinfo">
+                    <h2 style="color: transparent">.</h2>
+                    <h3>Contact me directly</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4 col-lg-offset-2 text-center">
+                            <i class="fa fa-phone fa-3x sr-contact"></i>
+                            <p><a href="tel:+33696036143">+33 (0)6.86.03.61.43</a></p>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                            <p><a href="mailto:portejoiepierre@gmail.com">portejoiepierre@gmail.com</a></p>
+                        </div>
                     </div>
-                    <div class="col-lg-4 text-center">
-                        <i class="fa fa-envelope-o fa-3x sr-contact" data-sr-id="10" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-                        <p><a href="mailto:portejoiepierre@gmail.com">portejoiepierre@gmail.com</a></p>
-                    </div>
+                    <hr>
+                    <h2 style="color: transparent">.</h2>
                 </div>
             </div>
 
@@ -1027,5 +1043,7 @@
 <script type="text/javascript" src="assets/scripts/functions.js"></script>
 <script type="text/javascript" src="assets/scripts/ruby/ruby.js"></script>
 <script type="text/javascript" src="assets/scripts/contact_me.js"></script>
+<script type="text/javascript" src="assets/scripts/scrollReveal.min.js"></script>
+<script type="text/javascript" src="assets/scripts/reveal-opt.js"></script>
 </body>
 </html>
