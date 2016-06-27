@@ -42,6 +42,10 @@ black : 2A363B
     cursor: pointer;
 }
 
+#experiences svg {
+    cursor: pointer;
+}
+
 .navbar-default .navbar-nav>li>a:hover {
     color: #E84A5F;
 }
@@ -167,6 +171,14 @@ footer a:hover {
 
 /* SKILLS */
 
+.skill-wheel path {
+    display: none;
+}
+
+#skills .glyphicon {
+    display: none;
+}
+
 ul.no-bullets {
     list-style-type: none;
     margin: 0px;
@@ -257,13 +269,13 @@ ul.no-bullets {
 }
 
 .btn-sendform {
-    width: 100px;
-    background: #99B898;
+    width: 300px;
+    background: #E84A5F;
     text-align: center;
 }
 
 .btn-sendform:hover {
-    width: 100px;
+    width: 300px;
     color: #E84A5F;
     background: #2A363B;
 }
@@ -477,6 +489,21 @@ form .row:first-child .floating-label-form-group {
     color: #99B898;
 }
 
+#workplace {
+    /*background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 59%, rgba(255, 255, 255, 0.65) 100%), url('assets/images/map.png') no-repeat bottom;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(59%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0.65))), url('assets/images/map.png') no-repeat bottom;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 59%, rgba(255, 255, 255, 0.65) 100%), url('assets/images/map.png') no-repeat bottom;
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 59%, rgba(255, 255, 255, 0.65) 100%), url('assets/images/map.png') no-repeat bottom;
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 59%, rgba(255, 255, 255, 0.65) 100%), url('assets/images/map.png') no-repeat bottom;*/
+    /*background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 59%, rgba(255, 255, 255, 0) 80%), url('assets/images/map.png') no-repeat bottom;*/
+
+    background: url("assets/images/map.png") no-repeat bottom;
+
+
+    background-size: 100%;
+    background-position: center;
+}
+
 /** titles **/
 
 #profile h2,
@@ -503,6 +530,10 @@ form .row:first-child .floating-label-form-group {
 }
 
 /* general */
+
+.headline {
+    font-size: 21px;
+}
 
 #profile h3,
 #skills h3{
