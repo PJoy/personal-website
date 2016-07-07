@@ -6,10 +6,17 @@ red : E84A5F
 black : 2A363B
 */
 
+/** pre load **/
+
+section,
+footer{
+    display: none;
+}
+
 /* navbar */
 
 .navbar-default {
-    background-color: #2A363B;
+    background-color: transparent;
     color: #ffffff;
     border-color: transparent;
 }
@@ -26,10 +33,10 @@ black : 2A363B
 }
 
 .sticky-navbar {
-    display: none;
+    /*display: none;*/
     position: fixed;
-    top: 200px;
-    right: 200px;
+    top: calc(30vh - 45px);
+    left: 100px;
     z-index: 2;
     list-style: none;
 }
@@ -592,4 +599,103 @@ footer .container {
         padding: 0 20px!important;
         min-width: 280px;
     }
+}
+
+/** loading **/
+
+
+#overlay{
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(256,256,256,0.9);
+    transition: 1s 0.4s;
+}
+#progress{
+    height:1px;
+    background:#E84A5F;
+    position:absolute;
+    width:0;                /* will be increased by JS */
+    top:50%;
+}
+#progstat{
+    font-size:0.7em;
+    letter-spacing: 3px;
+    position:absolute;
+    top:50%;
+    margin-top:-40px;
+    width:100%;
+    text-align:center;
+    color:#E84A5F;
+}
+
+/** intro text **/
+
+.intro {
+    font-size: 13px;
+}
+
+.clearbot {
+    margin-bottom: -10px;
+    display: block;
+}
+
+/** navbar **/
+
+.fixed .navbar {
+    position: fixed;
+    top: 0px;
+}
+
+.navbar {
+    border: 0px;
+    background-color: #2A363B;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 110px;
+    z-index: 999;
+    border-radius: 0;
+}
+
+.navbar .navbar-collapse {
+    padding: 0px;
+    max-height: none;
+}
+
+.navbar .navbar-nav {
+    float: none;
+}
+.navbar-nav {
+    margin: 0px;
+}
+
+.navbar .nav > li {
+    display: block;
+    float: none;
+    height: 20vh;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    /*background: #E84A5F;*/
+    color: #2A363B;
+}
+
+.navbar .nav > li a {
+    display: block;
+    height: 20vh;
+    text-align: center;
+    padding-top: calc(10vh - 14px);
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/** lightbox **/
+.featherlight-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
