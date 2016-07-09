@@ -207,6 +207,7 @@ ul.no-bullets {
 
 #skills ul > li .ability-score {
     float: right;
+    clear:both;
 }
 
 .skill-wheel {
