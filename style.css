@@ -600,7 +600,7 @@ footer .container {
 }
 
 @media (max-width: 767px){
-    .container {
+    .container:not(.top-logo) {
         padding: 0 20px!important;
         min-width: 280px;
     }
@@ -707,6 +707,16 @@ footer .container {
 
 }
 
+/** wip label **/
+#wip {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
 /** responsive **/
 
 .img-responsive {
@@ -734,8 +744,24 @@ footer .container {
         text-align: center;
     }
 
+    #wip {
+        display: none;
+    }
+
+    nav {
+        display: none!important;
+    }
+
 }
 
 @media (max-width: 992px) {
+    #wip {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 75px;
+        height: 75px;
+        z-index: 1;
+    }
 }
 
