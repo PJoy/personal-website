@@ -76,7 +76,7 @@ footer{
     right: 0px;
     opacity: 0.5;
     filter: alpha(opacity=50);
-    z-index: 2;
+    z-index: 3;
 }
 
 .background {
@@ -85,7 +85,7 @@ footer{
     bottom: 0px;
     left: 0px;
     right: 0px;
-    z-index: 1;
+    z-index: 2;
 
     background: no-repeat center right fixed url("assets/images/code-background-3.jpg");
     background-size: cover;
@@ -100,7 +100,7 @@ header .container {
     position: relative;
     padding-top: 200px;
     padding-bottom: 100px;
-    z-index: 4;
+    z-index: 5;
 }
 
 /* section */
@@ -238,6 +238,10 @@ ul.no-bullets {
     bottom: 0;
     right: 0;
     z-index: 51;
+}
+
+.skill-wheel div {
+    margin-bottom: 20px;
 }
 
 /* portfolio */
@@ -459,7 +463,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .floating-label-form-group input, .floating-label-form-group textarea {
-    z-index: 1;
+    z-index: 2;
     position: relative;
     padding-right: 0;
     padding-left: 0;
@@ -473,7 +477,7 @@ form .row:first-child .floating-label-form-group {
 
 .floating-label-form-group label {
     display: block;
-    z-index: 0;
+    z-index: 1;
     position: relative;
     top: 2em;
     margin: 0;
@@ -695,8 +699,43 @@ footer .container {
 }
 
 /** lightbox **/
+
 .featherlight-content img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+
 }
+
+/** responsive **/
+
+.img-responsive {
+    display: initial;
+}
+
+.desc-container > p {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+
+    .featherlight-content img {
+        height: 250px;
+    }
+
+    .desc-container > p {
+        text-align: left;
+    }
+
+    .experience-period {
+        font-size: 12px;
+    }
+    #profile * {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 992px) {
+}
+

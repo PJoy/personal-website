@@ -67,12 +67,12 @@
     <div id="progress"></div>
 </div>
 
-
 <img src="assets/images/wip.png" style="position: fixed;
     top: 0px;
     right: 0px;
     width: 100px;
     height: 100px;
+    z-index: 1;
 " alt="work in progress label">
 
 <!--
@@ -123,14 +123,14 @@
 <section id="profile">
     <nav class="navbar navbar-default" id="navbar-example">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <!--<div class="navbar-header">
+        <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-        </div> -->
+        </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="navbar-collapse navbar-ex1-collapse collapse" style="height: 1px;">
@@ -154,7 +154,7 @@
                 <h2>Profile</h2>
                 <hr>
                 <div class="row">
-                    <div class="col-lg-4 text-right vertical-align" data-sr="enter right, move 50px">
+                    <div class="col-md-4 text-right vertical-align" data-sr="enter right, move 50px">
                         <h3>About Me</h3>
                         <p class="intro">
                             I'm a passionate computer sciences engineer, I wrote my first line of code at 10 and never lost interest in it ever since.
@@ -162,10 +162,10 @@
                             I code websites as a freelancer for a living for now but I'm not confined to that area as I had the occasion to work in diverse domains such as academic research and embedded development for museum exhibitions.
                         </p>
                     </div>
-                    <div class="col-lg-4 text-center vertical-align">
+                    <div class="col-md-4 text-center vertical-align">
                         <img src="assets/images/photo-o.png" alt="Pierre PORTEJOIE, freelance sur Lyon" class="img-circle img-responsive"  data-sr="move 0px, scale up 25%">
                     </div>
-                    <div class="col-lg-4 vertical-align" data-sr="enter left, move 50px" style="z-index: 9">
+                    <div class="col-md-4 vertical-align" data-sr="enter left, move 50px" style="z-index: 9">
                         <h3>Details</h3>
                         <p>
                             <span><strong>Name:</strong></span>
@@ -222,7 +222,7 @@
                 <div style="overflow: hidden">
 
                     <div class="experience row exp-main">
-                        <div class="col-md-1" style="height: 200px;">
+                        <div class="col-md-1 hidden-sm col-xs-2" style="height: 200px;">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_21" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
                                 <rect x="21.875" width="6.25" height="800"/>
                             </svg>
@@ -231,14 +231,14 @@
                                 <circle cx="25.205" cy="400.337" r="6.25"/>
                             </svg>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-12 col-xs-4">
                             <h4>Freelance</h4>
                             <p class="experience-period">2015 - Today</p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12 col-xs-6 desc-container">
                             <p>
-                                <strong>Web developer - Consultant</strong>
-                            <span class="hidden-phone">
+                                <strong>Web Developer - Consultant</strong>
+                            <span class="hidden-xs">
                                 I develop websites for several clients. I am in charge of evaluating the projects, choosing the technologies, setting up the work environment according to the team size, developing the services, build a sufficient level of security and providing fast and reliable support for both the clients and thier users.
                                 I also provide technical expertise and formation interventions as a consultant on occasions.
                             </span>
@@ -258,7 +258,7 @@
                         </div>
                     </div>
                     <div class="experience row exp-second">
-                        <div class="col-md-1" style="height: 200px;">
+                        <div class="col-md-1 hidden-sm col-xs-2" style="height: 200px;">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_22" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
                                 <rect x="21.875" width="6.25" height="800"/>
                             </svg>
@@ -268,14 +268,14 @@
                             <circle cx="25.205" cy="400.337" r="6.25"/>
                         </svg>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-12 col-xs-4">
                             <h4>IEEE ICIP 2015 International Conference</h4>
                             <p class="experience-period">Sept 2015</p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12 col-xs-6 desc-container">
                             <p>
                                 <strong>Speaker in Image Processing</strong>
-                            <span class="hidden-phone">
+                            <span class="hidden-xs">
                                 My work at CREATIS lead to a publication to the ICIP international conference. I then had the occasion to present it in front of peers from all over the world.
                                 The paper proposed a new anisotropic diffusion formulation allowing non-linear spatio-temporal filtering of image sequences. The goal was to apply this filtering to brain scans of patients subject to multiple sclerosis.
                             </span>
@@ -295,7 +295,7 @@
                         </div>
                     </div>
                     <div class="experience row exp-main">
-                        <div class="col-md-1" style="height: 200px;">
+                        <div class="col-md-1 hidden-sm col-xs-2" style="height: 200px;">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_23" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
                                 <rect x="21.875" width="6.25" height="800"/>
                             </svg>
@@ -305,14 +305,14 @@
                             <circle cx="25.205" cy="400.337" r="6.25"/>
                         </svg>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-12 col-xs-4">
                             <h4>CREATIS - CNRS</h4>
                             <p class="experience-period">2014 - 2015</p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12 col-xs-6 desc-container">
                             <p>
                                 <strong>Researcher in Image Processing</strong>
-                            <span class="hidden-phone">
+                            <span class="hidden-xs">
                                 I developed and implemented a new way of filtering and denoising 3D+t stacks of MR acquired images based on anisotropic diffusion. The method outperformed state-of-the-art algorithms, in particular BM3D.
                                 On a second part I also developed a pipeline for automatic atlas based segmentation of 3D CT scans based on the registration of manually segmented images. This work was integrated within the european sized project PIPER, gathering 10 partners in 5 different countries.                            </span>
                                 <br>
@@ -331,7 +331,7 @@
                         </div>
                     </div>
                     <div class="experience row exp-second">
-                        <div class="col-md-1" style="height: 200px;">
+                        <div class="col-md-1 hidden-sm col-xs-2" style="height: 200px;">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_24" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
                                 <rect x="21.875" width="6.25" height="800"/>
                             </svg>
@@ -341,14 +341,14 @@
                             <circle cx="25.205" cy="400.337" r="6.25"/>
                         </svg>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-12 col-xs-4">
                             <h4>ERASME</h4>
                             <p class="experience-period">2013</p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12 col-xs-6 desc-container">
                             <p>
                                 <strong>Embedded Software Developer</strong>
-                            <span class="hidden-phone">
+                            <span class="hidden-xs">
                                 I developed a system allowing the diffusion of media scenarios (sequences of sound, image and video) detecting user interaction by a Raspberry Pi on a projector.
                                 The main idea was to create multiple clients, each one handling different types of actions and media, and connecting all of them to a scheduler synchonizing them while interpreting the .json scenario.
                                 My work was used for an exhibition at the museum Gallo-Romain in Lyon, France.
@@ -369,7 +369,7 @@
                         </div>
                     </div>
                     <div class="experience row exp-third">
-                        <div class="col-md-1" style="height: 200px;">
+                        <div class="col-md-1 hidden-sm col-xs-2" style="height: 200px;">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_25" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
                                 <rect x="21.875" width="6.25" height="800"/>
                             </svg>
@@ -379,14 +379,14 @@
                             <circle cx="25.205" cy="400.337" r="6.25"/>
                         </svg>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-12 col-xs-4">
                             <h4>ADM</h4>
                             <p class="experience-period">2012</p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12 col-xs-6 desc-container">
                             <p>
                                 <strong>Communication Manager</strong>
-                            <span class="hidden-phone">
+                            <span class="hidden-xs">
                                 I created abstract visuals for a music band, fitting their need to have a graspable image associated with their sound.
                                 I also managed their online communication, choosing the right channels and reflecting about the right way to send messages that didn't involve spamming the fans.
                             </span>
@@ -406,7 +406,7 @@
                         </div>
                     </div>
                     <div class="experience row exp-third">
-                        <div class="col-md-1" style="height: 200px;">
+                        <div class="col-md-1 hidden-sm col-xs-2" style="height: 200px;">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_26" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
                                 <rect x="21.875" width="6.25" height="800"/>
                             </svg>
@@ -416,14 +416,14 @@
                             <circle cx="25.205" cy="400.337" r="6.25"/>
                         </svg>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-12 col-xs-4">
                             <h4>Rêve de Foin</h4>
                             <p class="experience-period">2010 & 2011</p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12 col-xs-6 desc-container">
                             <p>
                                 <strong>Light Engineer</strong>
-                            <span class="hidden-phone">
+                            <span class="hidden-xs">
                                 I took part twice in the organization of an outdoor theatre and music festival.
                                 The tasks involved preparing the ground, setting up the scenes, cabling and adjusting lightnings and sounds, designing the light configuration and sometimes handling it live.
                             </span>
@@ -443,7 +443,7 @@
                         </div>
                     </div>
                     <div class="experience row exp-third">
-                        <div class="col-md-1" style="height: 200px;">
+                        <div class="col-md-1 hidden-sm col-xs-2" style="height: 200px;">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_27" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
                                 <rect x="21.875" width="6.25" height="800"/>
                             </svg>
@@ -453,14 +453,14 @@
                             <circle cx="25.205" cy="400.337" r="6.25"/>
                         </svg>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-12 col-xs-4">
                             <h4>CGR - La Rotonde</h4>
                             <p class="experience-period">2009 - 2012</p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12 col-xs-6 desc-container">
                             <p>
                                 <strong>General Secretary - Light & Sound Engineer </strong>
-                            <span class="hidden-phone">
+                            <span class="hidden-xs">
                                 My school years also consisted of discovering the associative world and in particular the life of a few hundred seats theatre managed by a student association and hosting close to two hundred events a year.
                                 Aside from the administrative part which wasn't really my cup of tea, I had the occasion to immerse myself in both the technical and artistic sides of light and sound design, creating ambiances for multiple and various shows.
                             </span>
@@ -480,7 +480,7 @@
                         </div>
                     </div>
                     <div class="experience row exp-third">
-                        <div class="col-md-1" style="height: 200px;">
+                        <div class="col-md-1 hidden-sm col-xs-2" style="height: 200px;">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_28" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
                                 <rect x="21.875" width="6.25" height="800"/>
                             </svg>
@@ -490,14 +490,14 @@
                             <circle cx="25.205" cy="400.337" r="6.25"/>
                         </svg>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-12 col-xs-4">
                             <h4>SNCF</h4>
                             <p class="experience-period">2009</p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12 col-xs-6 desc-container">
                             <p>
                                 <strong>Manual Work</strong>
-                            <span class="hidden-phone">
+                            <span class="hidden-xs">
                                 As a part of my engineering curriculum I worked in center for train maintenance and reparation.
                             </span>
                                 <br>
@@ -516,7 +516,7 @@
                         </div>
                     </div>
                     <div class="experience row exp-main">
-                        <div class="col-md-1" style="height: 200px;">
+                        <div class="col-md-1 hidden-sm col-xs-2" style="height: 200px;">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_29" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
                                 <rect x="21.875" width="6.25" height="800"/>
                             </svg>
@@ -526,14 +526,14 @@
                             <circle cx="25.205" cy="400.337" r="6.25"/>
                         </svg>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-12 col-xs-4">
                             <h4>INSA de Lyon</h4>
                             <p class="experience-period">2008 - 2014</p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12 col-xs-6 desc-container">
                             <p>
                                 <strong>Master’s Degree in Engineering - Telecommunications & Computer Science</strong>
-                            <span class="hidden-phone">
+                            <span class="hidden-xs">
                                 I firstly studied common engineering core, including maths, physics, chemistry, conception and mechanics then specialized in <i>Telecommunications, Services & Uses</i> where my courses included one third computer science, one third networking and one third telecommunication protocols and technologies.
                             </span>
                                 <br>
@@ -552,7 +552,7 @@
                         </div>
                     </div>
                     <div class="experience row exp-main">
-                        <div class="col-md-1" style="height: 200px;">
+                        <div class="col-md-1 hidden-sm col-xs-2" style="height: 200px;">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_210" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
                                 <rect x="21.875" width="6.25" height="800"/>
                             </svg>
@@ -562,14 +562,14 @@
                             <circle cx="25.205" cy="400.337" r="6.25"/>
                         </svg>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-12 col-xs-4">
                             <h4>Lycée Saint-Joseph</h4>
                             <p class="experience-period">2005 - 2008</p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12 col-xs-6 desc-container">
                             <p>
                                 <strong>High school - Baccalauréat (Sciences)</strong>
-                            <span class="hidden-phone">
+                            <span class="hidden-xs">
                                 Standard french high school-equivalent diploma.<br>
                                 My goal after that was to become a computer scientist.
                             </span>
@@ -584,7 +584,7 @@
                         </div>
                     </div>
                     <div class="experience row exp-main" style="/*overflow: hidden*/">
-                        <div class="col-md-1" style="height: 200px;">
+                        <div class="col-md-1 hidden-sm col-xs-2" style="height: 200px;">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_211" x="0px" y="0px" width="100%" height="100%" viewBox="0 361 50 400" enable-background="new 0 0 50 800" xml:space="preserve" class="line">
                                 <rect x="21.875" width="6.25" height="800"/>
                             </svg>
