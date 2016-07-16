@@ -765,3 +765,24 @@ footer .container {
     }
 }
 
+/** h2 to p **/
+
+.space {
+    color: transparent;
+    visibility: visible;
+    font-family: 'Open Sans', sans-serif !important;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 54px;
+    margin-top: 20px;
+    line-height: 1.1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
