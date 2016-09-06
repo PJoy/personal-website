@@ -709,6 +709,7 @@ footer .container {
 
 /** wip label **/
 #wip {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
