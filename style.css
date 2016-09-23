@@ -10,7 +10,7 @@ black : 2A363B
 
 section,
 footer{
-    display: none;
+    /*display: none;*/
 }
 
 /* navbar */
