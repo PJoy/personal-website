@@ -1,7 +1,7 @@
 /**
  * Created by pierreportejoie on 19/06/16.
  */
-
+/*
 ;(function(){
     function id(v){ return document.getElementById(v); }
     function loadbar() {
@@ -36,7 +36,7 @@
     }
     document.addEventListener('DOMContentLoaded', loadbar, false);
 }());
-
+*/
 
 $(document).ready(function(){
     applyHeader();
