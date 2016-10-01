@@ -73,28 +73,43 @@ function colorSkills(elemt, grade, col1, col2) {
 }
 
 function showOnlyWeb(){
-    if (jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button').not('.clicked').get(0) === jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button.btn-1').get(0)){
-        jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button.clicked').click();
-        return;
+    if (jQuery('.portfolio-btn:not(.clicked)').get(0) === jQuery('#cat-w-btn').get(0) &&
+        jQuery('.portfolio-btn:not(.clicked)').get(1) === undefined){
+        jQuery('.portfolio-btn').removeClass('clicked')
+        $('.img-cont:not(:first)').fadeIn();
+    } else {
+        jQuery('.portfolio-btn:not(#cat-w-btn)').addClass('clicked');
+        jQuery('#cat-w-btn').removeClass('clicked');
+        $('.img-cont:not(:first):not(.cat-w)').fadeOut();
+        $('.img-cont:not(:first).cat-w').fadeIn();
     }
-    if (jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button.btn-1').hasClass('clicked')) jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button.btn-1').click()
-    jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button').not('.btn-1').not('.clicked').click()
 }
 function showOnlyRes(){
-    if (jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button').not('.clicked').get(0) === jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button.btn-3').get(0)){
-        jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button.clicked').click();
-        return;
+    if (jQuery('.portfolio-btn:not(.clicked)').get(0) === jQuery('#cat-i-btn').get(0) &&
+        jQuery('.portfolio-btn:not(.clicked)').get(1) === undefined){
+        jQuery('.portfolio-btn').removeClass('clicked')
+        $('.img-cont:not(:first)').fadeIn();
+    } else {
+        jQuery('.portfolio-btn:not(#cat-i-btn)').addClass('clicked');
+        jQuery('#cat-i-btn').removeClass('clicked');
+        $('.img-cont:not(:first):not(.cat-i)').fadeOut();
+        $('.img-cont:not(:first).cat-i').fadeIn();
     }
-    if (jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button.btn-3').hasClass('clicked')) jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button.btn-3').click()
-    jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button').not('.btn-3').not('.clicked').click()
 }
 function showOnlyCre(){
-    if (jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button').not('.clicked').get(0) === jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button.btn-5').get(0) && jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button').not('.clicked').get(1) === undefined){
-        jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button.clicked').click();
-        return;
+    if (jQuery('.portfolio-btn:not(.clicked)').get(0) === jQuery('#cat-s-btn').get(0) &&
+        jQuery('.portfolio-btn:not(.clicked)').get(1) === jQuery('#cat-c-btn').get(0) &&
+        jQuery('.portfolio-btn:not(.clicked)').get(2) === undefined){
+        jQuery('.portfolio-btn').removeClass('clicked');
+        $('.img-cont:not(:first)').fadeIn();
+    } else {
+        jQuery('.portfolio-btn:not(#cat-s-btn):not(#cat-c-btn)').addClass('clicked');
+        jQuery('#cat-s-btn').removeClass('clicked');
+        jQuery('#cat-c-btn').removeClass('clicked');
+        $('.img-cont:not(:first):not(.cat-s):not(.cat-c)').fadeOut();
+        $('.img-cont:not(:first).cat-s').fadeIn();
+        $('.img-cont:not(:first).cat-c').fadeIn();
     }
-    if (jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button.btn-5').hasClass('clicked')) jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button.btn-5').click()
-    jQuery('#portfolio > div > div > div > div:nth-child(6) > div.col-md-4.img-cont > button').not('.btn-5').not('.clicked').click()
 }
 
 function showHideProjects (button, type) {
