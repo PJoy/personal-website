@@ -791,3 +791,57 @@ footer .container {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
+
+/** INLINE TO EXTERNAL **/
+.navbar-collapse.navbar-ex1-collapse.collapse{
+    height: 1px;
+}
+
+#profile-details{
+    z-index: 9;
+}
+
+#english-version-link{
+    color: #1b6d85!important;
+    text-decoration: underline
+}
+
+.overflow-fix{
+    overflow: hidden
+}
+
+.main-exp-fix{
+    height: 200px;
+}
+
+.hr-fix{
+    border-top: 0; margin: 20px
+}
+
+.hidden-lightboxes{
+    display: none;
+}
+
+.pad-bot-0{
+    padding-bottom: 0
+}
+
+#space-fix{
+    margin-bottom: 5px;
+}
+
+#a-fix{
+    color: #E84A5F
+}
+
+#a-CV{
+    color: #ffffff; text-decoration: underline
+}
+
+.fa-map-marker{
+    color: #E84A5F; font-size: 25px
+}
+
+#notice{
+    font-size: 10px
+}
